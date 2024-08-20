@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color:#f14807;
+    background-image: url(../images/background-adare-restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+/* Encabezado */
+.container .header {
+    text-align: center;
+    height: 20vm;
+}
+
+.container .header .img-container {
+    height: 20vh;
+}
+
+.container .header .img-container .img-logo {
+    height: 12vh;
+}
+
+/* Navbar*/
+.container .header .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.container .header .navbar .nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+
+.container .header .navbar .nav-item:hover {
+    color: #f5642b;
+    font-size: 1.6em;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+
+/*Main content*/
+.container .main-containar {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.container .main-containar .main-text-container {
+    color: white;
+    padding-top: 4rem;
+}
+
+.container .main-containar .main-text-container h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 5em;
+    transition: 0.03s;
+}
+
+.container .main-containar .main-text-container h1:hover {
+    text-shadow: 0.05em 0.05em #f5642b;
+    transition: 0.03s;
+}
+
+.container .main-containar .main-text-container article {
+    margin: 0 auto;
+    width: 35vw;
+}
+
+.container .main-containar .main-text-container p {
+    color: rgb(157, 156, 156);
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.1em;
+}
+
+.container .main-containar .main-text-container p strong {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.08em 0.08em #f5642b;
+}
+
+/*Map google*/
+.container .main-container .map-container .google-map {
+    height: 50vh;
+    width: 60vw;
+}
+
+/* Footer */
+.container .footer {
+    color: white;
+    text-align: center;
+}
+
+.container .footer h4 {
+    font-size: 1.1em;
+}
+
+/* Media Querys (Estilo responsive) para tablets */
+@media (min-width: 768px) and (max-width: 992px) {
+    .container .header .navbar {
+        width: 50vw;
+    }
+}
+
+/*Media para ccelular*/
+@media (max-width: 530px) and (max-width: 750px) {
+    .container .header .navbar {
+        width: 75vm;
+    }
+}
+
+/*media para celulares L*/
+@media (min-width: 530px) and (max-width: 750px){
+    .container .header .navbar {
+        width: 75vw;
+    }
+}
+
+/* Media para celulares */
+@media (max-width: 310px) and (max-width: 529px) {
+    .container .header {
+        margin-left: 11vw;/*Margen para centrar el header*/
+    }
+
+    .container .header .img-container {
+        margin-left: 30vw; /*Para ecentar el logo*/
+    }
+
+    .container .header .navbar {
+        /*Usando flex grid*/
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100vw;/*100vw es igual a 100%*/
+        gap: 0.5rem;
+    }
+
+    .container .main-containar {
+        width: 100vw;
+    }
+
+    .container .main-containar .main-text-container {
+        width: 100vw;
+    }
+
+    .container .main-containar .main-text-container article {
+        width: 60vw;
+    }
+
+    .container .main-containar .map-container .google-map {
+        margin-left: 11vw;
+        width: 100vw;
+    }
+
+    .container .footer {
+        width: 100vw;
+        margin-left: 11vw;
+    }
+
+    .container .footer h4{
+        font-size: 1.3em;
+    }
+    
+}
