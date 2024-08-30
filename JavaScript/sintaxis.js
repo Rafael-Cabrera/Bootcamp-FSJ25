@@ -2,16 +2,16 @@ console.log("Holis estoy imprimiendo en la consola");
 
 //  ---- Operadores Matematicos ----
 
-let suma = 2+2;
-let resta = 4-2;
-let division = 135/5;
-let multiplicacion = 1354*356;
+let suma = 2 + 2;
+let resta = 4 - 2;
+let division = 135 / 5;
+let multiplicacion = 1354 * 356;
 let residuo = 10 % 2;
 
 console.log(suma);
 
 // Concatenacion -> UNIR DOS VALORES y CUALQUIERA DE LOS DOS ES UN string
-let sumaFalsa = 2+"2";
+let sumaFalsa = 2 + "2";
 console.log(sumaFalsa);
 
 // ---- Operadores Logicos ----
@@ -56,7 +56,7 @@ nombreFuncion ESTO ES REEMPLAZADO POR EL NOMBRE DE LA FUNCION
 () SIRVEN PARA RECIBIR DATOS
 {} DELIMITADORES DEL CODIGO DE LA FUNCION
 */
-function nombreFuncion(){
+function nombreFuncion() {
 
     console.log("Hola te saludo desde la funcion");
 }
@@ -69,16 +69,16 @@ nombreFuncion();
 //TIPOS DE FUNCION
 //Tipo VOID -> Vacia
 
-function tipoVoid(){
+function tipoVoid() {
     console.log("Soy una funcion tipo VOID");
 }
 
 //tipoVoid();
 
 //Tipo Return -> Devuelven VALOR
-function tipoReturn () {  
+function tipoReturn() {
     console.log("Hey me estoy ejecutando, soy la funcion con Return");
-      
+
     return "Soy una funcion tipo Return";
 }
 
@@ -93,17 +93,17 @@ console.log(ejecucion2);
 
 //Funciones con parametros -> Funciones que trabajan con datos que vienen de fuera
 //NotANumber NaN -> No es un numero lo que se intenta aplicar a un operador matematico
-function sumar(num1,num2){
-    return num1+num2;
+function sumar(num1, num2) {
+    return num1 + num2;
 }
 
-let resultado = sumar(15,5);
+let resultado = sumar(15, 5);
 console.log(resultado);
 
 
 //Funcion flecha
 //Declaracion
-function funcionExpresada( ){ 
+function funcionExpresada() {
 
 }
 
@@ -112,25 +112,28 @@ CONSTANTE nombreFuncion asignamos parametros flecha llaves CODIGO A EJECUTAR
 const       funcionFlecha  =        ()         =>   {      log()        }
 */
 const funcionFlecha = (num1, num2) => {
-    return num1-num2; 
+    return num1 - num2;
 }
 
 
 //Callback -> RECIBE UNA FUNCION PARA PONERLA A FUNCIONAR
-function funcionCallback(funcion){
+function funcionCallback(funcion) {
     //Recibi una funcion por lo tanto la ejecuto
     funcion();
 }
 
-function funcionAuxiliar(){
+function funcionAuxiliar() {
     console.log("Estoy funcionando pero desde el callback");
 }
 
 funcionCallback(funcionAuxiliar);
 
 //Callback con funcionFlecha ANONIMA
-funcionCallback( () => { console.log("Te saludo desde la funcion flecha anonima jeje saludos");
+funcionCallback(() => {
+    console.log("Te saludo desde la funcion flecha anonima jeje saludos");
 });
 
-funcionCallback(function () { console.log(
-    "Holiwis desde la funcion anonima expresada");})
+funcionCallback(function () {
+    console.log(
+        "Holiwis desde la funcion anonima expresada");
+})
