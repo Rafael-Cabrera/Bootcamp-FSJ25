@@ -77,6 +77,7 @@ for(let numero = 1; numero < 10; numero++){
 // FASE 2 = CONDICION DE CORTE + EJECUTAR + INCREMENTO/DESCREMENTO
 
 
+/*
 // Estrcutura de datos COMPLEJA
 // ESTRUCTURA DE DATO SIMPLE let variable1 = "Rafa";
 // ARRAY
@@ -125,3 +126,27 @@ function recorrerArray(array){
 
 let array = [1,2,3,4];
 recorrerArray(array)
+
+*/
+
+// REcorrer array y devolver los números pares
+function numParesArray(arr){
+    let i = 0;
+    let arrayAux = []; // Array donde guardamos los números pares
+    if(arr.length == 0){
+        return array;
+    }
+
+    while(i < arr.length){
+        
+        if(arr[i] % 2 == 0){
+            console.log(arr[i]);
+            //arrayAux.push(arr[i]);
+        }
+
+        i++;
+    }
+}
+
+let arrayCito = [1,2,3,4];
+numParesArray(arrayCito);
