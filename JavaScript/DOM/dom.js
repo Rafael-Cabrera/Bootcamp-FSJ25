@@ -36,3 +36,16 @@ btnApretable.addEventListener('click',() => {
     alert('Este mensaje es la mágia del botón!!');
     console.log('despues del clic');
 });
+
+
+
+function apretandoBoton(){
+    let nombre = prompt("Ingresa tu nombre:");
+    let apellido = prompt("Ingresa tu apellido:");
+    alert(nombre +' '+ apellido);
+}
+
+function cambiandoInput(e){
+    console.log(e.target.value);
+    console.log("!!Cambié!!");
+}

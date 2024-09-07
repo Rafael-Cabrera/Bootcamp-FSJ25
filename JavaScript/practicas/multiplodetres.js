@@ -1,6 +1,6 @@
 function fMultiplosDeTres(arr) {
     //Verificar que el arreglo tenga datos
-    if (arr.length <= 0) {
+    if (arr.length <= 1) {
         return arr;
     }
 
@@ -33,3 +33,5 @@ const numArray = [1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33];
 const resultadoArray = fMultiplosDeTres(numArray);
 console.log('Array resultante:');
 console.log(resultadoArray);  // Salida: [3, 6, 9, 12, 15, 18, 21] el 24 y otros ya no se agrega porque supera el límite de 100.
+
+
