@@ -9,7 +9,7 @@
 
 class Autos{
     //Caracteristicas
-    numChasis:string;
+    numChasis:number;
     motor:string;
     color:string;
     tipoCombustible:string;
@@ -19,5 +19,35 @@ class Autos{
     frenos:string;
     modelo:string;
     añoFab:number;
-    
+
+    //Constructor -> metodo reservado que nos sirve para instanaciar objetos.
+    constructor(pNumChasis:number, pMotor:string, pColor:string, pTipoCombustible:string, pTransmision:string, pCantKilometraje:string, pPlazas:number, pFrenos:string, pModelo:string, pAñoFab:number){
+        this.numChasis=pNumChasis;
+        this.motor=pMotor;
+        this.color=pColor;
+        this.tipoCombustible=pTipoCombustible;
+        this.transmision=pTransmision;
+        this.cantKilometraje=pCantKilometraje;
+        this.plazas=pPlazas;
+        this.frenos=pFrenos;
+        this.modelo=pModelo;
+        this.añoFab=pAñoFab;
+    }
+    //Metodos -> acciones
+    encender():void {
+        console.log("Brum re brum");
+    }
+
+    apagar():void {
+        console.log("Tan Tan");
+    }
 }
+
+//Instanciar objetos a traves de una clase -> Crear un objeto
+let autito:Autos = new Autos(12345, '2xyd3l', 'Negro', 'Gasolina', 'Automatica', '100', 5, 'ABS', 'Lancer', 2015);
+
+console.log(autito);
+
+//Agregar una propiedad al objeto.
+//autito.modelo = "Corolla";
+//console.log(autito);
