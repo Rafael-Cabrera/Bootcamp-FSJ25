@@ -18,10 +18,10 @@ class Autos{
     plazas:number;
     frenos:string;
     modelo:string;
-    añoFab:number;
+    anioFab:number;
 
     //Constructor -> metodo reservado que nos sirve para instanaciar objetos.
-    constructor(pNumChasis:number, pMotor:string, pColor:string, pTipoCombustible:string, pTransmision:string, pCantKilometraje:string, pPlazas:number, pFrenos:string, pModelo:string, pAñoFab:number){
+    constructor(pNumChasis:number, pMotor:string, pColor:string, pTipoCombustible:string, pTransmision:string, pCantKilometraje:string, pPlazas:number, pFrenos:string, pModelo:string, panioFab:number){
         this.numChasis=pNumChasis;
         this.motor=pMotor;
         this.color=pColor;
@@ -31,7 +31,7 @@ class Autos{
         this.plazas=pPlazas;
         this.frenos=pFrenos;
         this.modelo=pModelo;
-        this.añoFab=pAñoFab;
+        this.anioFab=panioFab;
     }
     //Metodos -> acciones
     encender():void {
@@ -48,6 +48,6 @@ let autito:Autos = new Autos(12345, '2xyd3l', 'Negro', 'Gasolina', 'Automatica',
 
 console.log(autito);
 
-//Agregar una propiedad al objeto.
-//autito.modelo = "Corolla";
-//console.log(autito);
+//Agregar una propiage al objeto.
+autito.motor = "v12";
+console.log(autito);

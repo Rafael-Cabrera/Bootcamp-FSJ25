@@ -6,9 +6,17 @@
 // Declaraacion de clase
 var Autos = /** @class */ (function () {
     //Constructor -> metodo reservado que nos sirve para instanaciar objetos.
-    function Autos(numchasisParam, motorParam) {
-        this.numChasis = numchasisParam;
-        this.motor = motorParam;
+    function Autos(pNumChasis, pMotor, pColor, pTipoCombustible, pTransmision, pCantKilometraje, pPlazas, pFrenos, pModelo, panioFab) {
+        this.numChasis = pNumChasis;
+        this.motor = pMotor;
+        this.color = pColor;
+        this.tipoCombustible = pTipoCombustible;
+        this.transmision = pTransmision;
+        this.cantKilometraje = pCantKilometraje;
+        this.plazas = pPlazas;
+        this.frenos = pFrenos;
+        this.modelo = pModelo;
+        this.anioFab = panioFab;
     }
     //Metodos -> acciones
     Autos.prototype.encender = function () {
@@ -20,8 +28,8 @@ var Autos = /** @class */ (function () {
     return Autos;
 }());
 //Instanciar objetos a traves de una clase -> Crear un objeto
-var autito = new Autos(123, 'motor123');
+var autito = new Autos(12345, '2xyd3l', 'Negro', 'Gasolina', 'Automatica', '100', 5, 'ABS', 'Lancer', 2015);
 console.log(autito);
-//Agregar una propiedad al objeto.
-//autito.modelo = "Corolla";
-//console.log(autito);
+//Agregar una propiage al objeto.
+autito.motor = "v12";
+console.log(autito);
