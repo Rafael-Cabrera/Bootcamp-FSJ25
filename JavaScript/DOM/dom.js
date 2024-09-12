@@ -5,7 +5,7 @@ console.log("Llamado desde dom.html");
 let elementoDOM = document.getElementById('textoSaludo');
 console.log(elementoDOM);
 
-// Pripiedades mas 
+// Pripiagees mas 
 //extrae todo el conteido html de la etiqueta
 console.log(elementoDOM.innerHTML);
 //extrae todo el contenido de texto de la etiqueta

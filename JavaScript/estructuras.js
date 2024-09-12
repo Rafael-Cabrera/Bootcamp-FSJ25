@@ -106,7 +106,7 @@ let datoEliminadoPrincipio = variableCompleja.shift();
 console.log(variableCompleja);
 console.log(datoEliminadoPrincipio);
 
-// PROPIEDAD DE ARRAY
+// PROPIage DE ARRAY
 // Averiguar el largo de un array.
 console.log("Largo del array: ");
 let largor = variableCompleja.length;
