@@ -1,7 +1,7 @@
 // 4 pilares de POO
 
 /*
-    Herencia
+  *  Herencia -> capacidad de una subclase de obtener todo de su clase
     Poliformismo
 
     1) Encapsulamiento -> Limitar el acceso a algo a traves de MODIFICADORES DE ACCESO
@@ -38,6 +38,15 @@ class Person{
         return this.name;
     }
 
+    
+    getAge(){
+        return this.age;
+    }
+    
+    getDui(){
+        return this.dui;
+    }
+    
     setAge(ageParam:number){
         this.age = ageParam;
     }
@@ -50,3 +59,32 @@ let personita = new Person('Rafa', 51, '123456789');
 //personita.respirar
 
 console.log(personita);
+
+
+class Developer extends Person{
+    private exp:number;
+    private techSkill:string[];
+    private softSkills:string[];
+    private gitUser:boolean;
+    private area:string;
+    private projects:string[];
+
+    constructor(nameParam:string, ageParam:number, duiParam:string, expParam:number, techSkillParam:string[], softSkillsParam:string[], gitUserParam:boolean, areaParam:string, projectsParam:string[]){
+        super(nameParam, ageParam, duiParam); //acceder propiedad de la clase padre.
+    }
+
+    getAre(){
+        return this.area;
+    }
+    respirar():void {
+        console.log('Snigg');
+    }
+
+
+}
+
+let developercito = new Developer('Rafa', 51, '123456789',3,['uno','dos','tres'],['com','djdj'],true,'seguros',['pro','lider']);
+developercito.getAge();
+
+personita.respirar();
+developercito.respirar();
