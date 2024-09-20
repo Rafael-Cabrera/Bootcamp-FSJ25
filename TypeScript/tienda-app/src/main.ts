@@ -1,4 +1,5 @@
 import { Producto } from './clases/Producto';
+import { Tienda } from './clases/Tienda';
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -25,6 +26,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </form>
   </div>
 `
+// inicializamos la tienda para poder manipular los productos
+const tienda = new Tienda();
 
 //document.querySelector<HTMLElement>('#parrafo')!.innerText = "Esto es texto desde el p";
 const form = document.getElementById("formProducto") as HTMLFormElement;
@@ -47,6 +50,6 @@ form.addEventListener("submit", (e:SubmitEvent)=> {
   let productito = new Producto(1, nombre, precio, cantidad);
   console.log(productito);
 
-  localStorage.setItem('productos',JSON.stringify(productito));
+  tienda.agregarProducto(productito);//Agregar un procto al localstorage.
 
 });
