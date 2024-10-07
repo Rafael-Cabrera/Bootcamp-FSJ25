@@ -1,9 +1,12 @@
-//PROPS -> Propiedades
-//Como recibir las props ? A traves de sus parametros
-export const Chauchis = ({nombreUsuario}) => {
+//PROPS -> Propiedades 
+//Como recibir las props? A TRAVES DE SUS PARAMETROS
+export const Chauchis = ({nombreUsuario,edad}) => {
+
     return (
-        <>
-            <h2>Bye bye {nombreUsuario}, desde Chauchis</h2>
-        </>
+        <div>
+            <h2>Bye bye {nombreUsuario}, desde el chauchis</h2>
+            {edad}
+            
+        </div>
     )
 }

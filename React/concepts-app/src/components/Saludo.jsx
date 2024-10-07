@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { Chauchis } from "./Chauchis";
 
-// Declaracion de un componente
-export const Saludo = ()=>{
-  //let nombre = "Rafa";
+//Declaracion de un COMPONENTE
+export const Saludo = ()=> {
+  //let nombre = "Jairo";
 
-  //Primer HOOK=> useState
-  //Hook -> es una funcion prehecha para realizar x accion
-  //useState(valor inicial)
-  const [nombre, cambiarNombre] = useState("Rafa");
+  //Primer HOOK -> useState
+  //Hook -> Es una funcion prehecha para realizar x accion
+  //useState(VALOR INICIAL )
+  const [nombre,cambiarNombre] = useState("Rafa");
 
     return (
-      <>
-        <h3>Yo realmente estoy en el compenente saludo jejex</h3>
-        <h2>Hola {nombre},cómo estás?</h2>
-        <button onClick={()=>{ cambiarNombre("Rafaelito") }}>Magia</button>
-        
-        <Chauchis nombreUsuario={nombre}/>
-      </>
+      <div>
+        <h3>Yo en realidad estoy en el componente Saludo jejox</h3>
+        <h2>Hola {nombre}, como estas?</h2>
+        <button onClick={() => { cambiarNombre("Rafaelito") }} >MAGIA </button>
+
+        <Chauchis nombreUsuario={nombre} edad="51" />
+      </div>
     )
-  }
+ }
